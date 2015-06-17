@@ -1,0 +1,3 @@
+-[ ] Test Connection of static files
+-[ ] Create static mockup
+-[ ] Determine files needed
