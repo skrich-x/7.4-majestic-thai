@@ -28,6 +28,7 @@ body {
   @include outer-container(1050px);
   margin-left: 0;
   margin-right: 0;
+  border-bottom: 1px solid RGBA(232, 232, 232, 1);
 }
 
 ul{
@@ -44,10 +45,20 @@ ul{
   height: 250px;
   width: 100%;
   background-color: RGBA(198, 227, 205, 1);
+/*   background-image: url('images/headerBackground.jpg'); */
 }
 
 .searchBar{
   height: 65px;
+}
+
+.searchBar input{
+  width: 335px;
+  height:50px;
+  border-bottom: 2px solid RGBA(107, 173, 66, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 ///////Menu Items Styling///////
 .menuItems{
@@ -61,7 +72,6 @@ ul{
 
 .itemList{
   border: 1px solid gray;
-  margin-left: 50px;
   color:RGBA(144, 152, 153, 1);
 }
 
@@ -77,8 +87,40 @@ ul{
   padding: 24px;
 }
 
+.item button{
+  border: 1px solid gray;
+  color: RGBA(52, 152, 219, 1);
+
+}
+
 //////ORDERS STYLING/////////
 .orders{
   border: 1px solid gray;
   margin-top: 15px;
+}
+
+.yourOrder{
+  height: 70px;
+  text-align: center;
+}
+
+.groupOrderButton{
+  height: 105px;
+  text-align: center;
+}
+
+.itemPrice{
+  height: 100px;
+  text-align: center;
+}
+
+.deliverPickup{
+  height: 110px;
+  text-align: center;
+}
+//////FOOTER STYLING////////
+
+footer{
+  height: 130px;
+  color:RGBA(127, 131, 134, 1);
 }
