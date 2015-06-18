@@ -20,6 +20,65 @@ body {
   color: $base-font-color;
 }
 
-body{
+/* body{
   background-color: RGBA(198, 227, 205, 1);
+} */
+
+.centeredContainer{
+  @include outer-container(1050px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+////////Header Styling//////////
+.nav{
+  height: 65px;
+}
+
+.headerImage{
+  height: 250px;
+  width: 100%;
+  background-color: RGBA(198, 227, 205, 1);
+}
+
+.searchBar{
+  height: 65px;
+}
+///////Menu Items Styling///////
+.menuItems{
+@include span-columns (7);
+}
+
+.orders{
+@include span-columns (4 of 12);
+@include omega();
+}
+
+.itemList{
+  border: 1px solid gray;
+  margin-left: 50px;
+  color:RGBA(144, 152, 153, 1);
+}
+
+.itemList li{
+  border-bottom: 1px solid gray;
+}
+
+.itemList :hover{
+  background-color: RGBA(232, 232, 232, 1);
+}
+
+.item{
+  padding: 24px;
+}
+
+//////ORDERS STYLING/////////
+.orders{
+  border: 1px solid gray;
+  margin-top: 15px;
 }
