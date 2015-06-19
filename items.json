@@ -1,0 +1,82 @@
+[{
+  "id":1,
+  "name":"Homemade Potato Chips & Dip",
+  "type": "appitizer",
+  "description":"Fresh cut homemade chips and dip",
+  "price": 6,
+  "populartity": 10
+},
+{
+  "id":2,
+  "name": "Fried Macoroni & Cheese",
+  "type":"appitizer",
+  "description": "Cheese Macaroni breaded and the deep fried. Great with any dipping sauce",
+  "price": 7,
+  "populartity":
+},
+{
+  "id":3,
+  "name": "Cajun Tips",
+  "type":"appitizer",
+  "description": "8 oz of chopped steak slow cooked with a cajun seasoning. Served with homemade cajun dressing",
+  "price":8,
+  "populartity":
+},
+{
+  "id":4,
+  "name": "Hand-Battered Onion Rings",
+  "type":"appitizer",
+  "description": "Homemade onion rings lightly battered and deep fried",
+  "price": 7,
+  "populartity":
+},
+{
+  "id":5,
+  "name": "TexMex Eggrolls",
+  "type":"appitizer",
+  "description":"Spicy Chicken, Corn, black beans, pepper, onions, and melted Cheese. Served with Avocado Cream and Salsa",
+  "price":9,
+  "populartity":
+},
+{
+  "id":6,
+  "name":"Chargrilled Burger",
+  "type":"burger",
+  "price":7,
+  "populartity":
+},
+{
+  "id":7,
+  "name":
+  "type":
+  "price":
+  "populartity":
+},
+{
+  "id":8,
+  "name":
+  "type":
+  "price":
+  "populartity":
+},
+{
+  "id":9,
+  "name":
+  "type":
+  "price":
+  "populartity":
+},
+{
+  "id":10,
+  "name":
+  "type":
+  "price":
+  "populartity":
+},
+{
+  "id":11,
+  "name":
+  "type":
+  "price":
+  "populartity":
+}]
