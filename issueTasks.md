@@ -1,15 +1,15 @@
 ### Tasks
 #### Getting Started
 - [x] Setup the scaffolding and install Backbone
-- [ ] Setup templates for the different dynamic portions of the application
-- [ ] Produce static data for the menu items
-- [ ] Produce a functional static mockup
+- [x] Setup templates for the different dynamic portions of the application
+- [x] Produce static data for the menu items
+- [x] Produce a functional static mockup
 
 #### Menu
-- [ ] Fetch and `console.log` the static JSON for the menu items
-- [ ] Render a template for each menu item, not according to category.
-- [ ] Define a FoodListView constructor
-- [ ] Make a view instance responsible instead of just a template for the collection.
+- [x] Fetch and `console.log` the static JSON for the menu items
+- [x] Render a template for each menu item, not according to category.
+- [x] Define a FoodListView constructor
+- [x] Make a view instance responsible instead of just a template for the collection.
 - [ ] Define a FoodItemView constructor
 - [ ] Use the `renderChildren` method to render a child view for each food item
 - [ ] `console.log` the food model when I click on its price button

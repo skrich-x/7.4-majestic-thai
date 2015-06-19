@@ -1,10 +1,10 @@
 - [x] Test Connection of static files
 - [x] Create static mockup
 - [x] Determine templates needed
-- [ ] Re-render templates on page - erase application.hbs
-- [ ]
-- [ ]
-- [ ]
+- [x] Re-render templates on page - erase application.hbs
+- [x] Create view for menu Items.
+- [x] Create model and collection for menu Items
+- [x] Display items in html
 - [ ]
 - [ ]
 - [ ]
