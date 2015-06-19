@@ -1,3 +1,10 @@
--[x] Test Connection of static files
--[ ] Create static mockup
--[ ] Determine files needed
+- [x] Test Connection of static files
+- [x] Create static mockup
+- [x] Determine templates needed
+- [ ] Re-render templates on page - erase application.hbs
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]

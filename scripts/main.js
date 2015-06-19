@@ -2,6 +2,8 @@
   'use strict';
 
   $(document).ready(function(){
-    $('body').prepend(JST.application());
+    $('#menuItemTemplate').prepend(JST.menuItems());
+    $('#orderTemplate').html(JST.order());
+
   });
 })();
