@@ -6,7 +6,7 @@ import {Item, ItemListCollection} from './models/itemList';
 
   $(document).ready(function(){
     // Backbone.history.start();
-    // $('#orderTemplate').html(JST.order());
+    $('#orderTemplate').html(JST.order());
     console.log("inDocReady");
 
     var itemList = new ItemListCollection();

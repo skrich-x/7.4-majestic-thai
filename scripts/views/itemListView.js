@@ -1,6 +1,7 @@
 export default Backbone.View.extend({
   template: JST.menuItems,
-  className: 'items',
+  className: 'menuItems',
+  
 
   initialize: function(){
     this.render();
