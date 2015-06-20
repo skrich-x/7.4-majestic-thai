@@ -11,7 +11,7 @@ var Item = Backbone.Model.extend({
 
 var ItemListCollection = Backbone.Collection.extend({
     model: Item,
-    url: "https://api.parse.com/1/classes/Menu",
+    url: "https://api.parse.com/1/classes/ThaiItems",
 
 // The Parse API returns models under "results".
   parse: function(response) {
