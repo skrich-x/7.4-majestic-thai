@@ -10,4 +10,5 @@
 - [x] Render child view - will have to restructure views
 - [x] Correct Styling issues to keep styling
 - [x] Add events for Clicking on price.
-- [ ] Console.log the price when clicked
+- [x] Console.log the price when clicked
+- [ ] Create order Constructor
