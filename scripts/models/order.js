@@ -3,8 +3,13 @@ import {ItemListCollection} from './itemList';
 var Order = Backbone.Model.extend({
   idAttribute: 'objectId',
 
-  defaults: {
-    item:''
+  defaults: function() {
+    return {
+      item: '',
+      price: 0,
+      description: '',
+      category:'',
+    };
   },
 
   initialize: function(){

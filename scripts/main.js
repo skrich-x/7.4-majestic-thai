@@ -15,8 +15,11 @@ import {Order, OrderCollection} from './models/order';
     $('#orderTemplate').html(JST.order());
 
     var itemList = new ItemListCollection();
-    console.log(itemList);
-    var order = new Order();
+    console.log('itemList', itemList);
+
+    var orderCollection = new OrderCollection();
+    console.log('order',orderCollection);
+
     itemList.fetch().then(function(){
       var menuItem = new MenuItem({collection: itemList});
       $('#menuItemTemplate').html(menuItem.el);

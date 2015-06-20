@@ -1,8 +1,11 @@
-import EachItemView from './itemView';
+import ItemView from './itemView';
+
+import {ItemListCollection} from '../models/itemList';
 
 export default Backbone.View.extend({
-  template: JST.menuItems,
-  className: 'menuItems',
+  template: JST.foodCategory,
+  tagName: 'ul',
+  className: 'foodCategory',
 
 
   initialize: function(){
@@ -19,7 +22,8 @@ export default Backbone.View.extend({
 
     this.children = this.collection.map((child) => {
       var view = new EachItemView({
-        model: child
+        model: child,
+        collection: this.collection
       });
 
       this.$el.append(view.el);
@@ -35,6 +39,5 @@ export default Backbone.View.extend({
       Backbone.View.prototype.remove.apply(this.arguments);
 
     }
-
 
 });

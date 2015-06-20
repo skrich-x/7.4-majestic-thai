@@ -1,3 +1,4 @@
+import {OrderCollection} from '../models/order';
 
 export default Backbone.View.extend({
   template: JST.menuItems,
@@ -7,9 +8,10 @@ export default Backbone.View.extend({
   'click .order': 'addOrderItem'
   },
 
-  initialize: function(){
+  initialize: function(options){
     this.render();
     // console.log('initialize');
+    this.order = options.order;
   },
 
   render: function (){
@@ -17,8 +19,15 @@ export default Backbone.View.extend({
     // console.log('render');
   },
 
-  addOrderItem: function(){
+  addOrderItem: function(e){
+    e.preventDefault();
     console.log(this.model.toJSON().price);
+
+    // this.order.add(this.model);
+    // console.log('collection',this.order);
+
+    //^^^^creating error referencing "add"
+
   }
 
 });
