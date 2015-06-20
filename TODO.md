@@ -8,4 +8,6 @@
 - [ ] Correct Naming between files to correct         styling
 - [ ] ( address menuItems class in scss)
 - [x] Render child view - will have to restructure views
-- [ ] Correct Styling issues to keep styling
+- [x] Correct Styling issues to keep styling
+- [x] Add events for Clicking on price.
+- [ ] Console.log the price when clicked
