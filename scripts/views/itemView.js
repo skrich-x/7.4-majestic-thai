@@ -9,14 +9,16 @@ export default Backbone.View.extend({
 
   initialize: function(){
     this.render();
+    // console.log('initialize');
   },
 
   render: function (){
     this.$el.html(this.template(this.model.toJSON()));
+    // console.log('render');
   },
 
   addOrderItem: function(){
-    console.log(this);
+    console.log(this.model.toJSON().price);
   }
 
 });
