@@ -13,7 +13,7 @@
 - [x] Define a FoodItemView constructor
 - [x] Use the `renderChildren` method to render a child view for each food item
 - [ ] `console.log` the food model when I click on its price button
-- [ ] Define a Order constructor
+- [x] Define a Order constructor
 - [ ] Create an instance of Order
 - [ ] Pass the order to the child views
 - [ ] `console.log` the order when I click on the foods price

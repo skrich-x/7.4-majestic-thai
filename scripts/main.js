@@ -1,3 +1,5 @@
+import AjaxConfig from './ajax-config';
+
 import MenuItem from './views/itemListView';
 import {Item, ItemListCollection} from './models/itemList';
 import {Order} from './models/order';

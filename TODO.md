@@ -11,4 +11,5 @@
 - [x] Correct Styling issues to keep styling
 - [x] Add events for Clicking on price.
 - [x] Console.log the price when clicked
-- [ ] Create order Constructor
+- [x] Create order Constructor - use the example from todo
+- [ ] instansiate Order constructor
