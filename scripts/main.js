@@ -10,10 +10,10 @@ import {Order, OrderCollection} from './models/order';
   $(document).ready(function(){
     Backbone.history.start();
     $('#orderTemplate').html(JST.order());
-    console.log("inDocReady");
+
 
     var itemList = new ItemListCollection();
-
+    console.log(itemList);
     itemList.fetch().then(function(){
       var menuItem = new MenuItem({collection: itemList});
       $('#menuItemTemplate').html(menuItem.el);

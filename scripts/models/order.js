@@ -36,8 +36,8 @@ var Order = Backbone.Model.extend({
         })
       });
     }
-
   });
+  console.log(Order);
 
   var OrderCollection = Backbone.Collection.extend({
     model: Order,
