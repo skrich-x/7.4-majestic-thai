@@ -1,6 +1,11 @@
 import{ItemListCollection} from './itemList';
 
-export default Backbone.Model.extend({
+var Order = Backbone.Model.extend({
+  idAttribute: 'objectId',
+
+  defaults: {
+    item:''
+  },
 
   initialize: function(){
     //create item collection to track items for order
@@ -21,7 +26,22 @@ export default Backbone.Model.extend({
   },
 
   toJSON: function(){
+      return _.extend({}, this.attributes, {
+        items: this.items.map(function(item){
+            return {
+              "__type": "Pointer",
+              "className": "Order",
+              "objectId": item.id
+            };
+        })
+      });
+    }
 
-  }
+  });
 
-});
+  var OrderCollection = Backbone.Collection.extend({
+    model: Order,
+    url: "https://api.parse.com/1/classes/Order"
+  });
+
+  export default {Order, OrderCollection};

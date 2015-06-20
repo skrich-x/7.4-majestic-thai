@@ -13,3 +13,7 @@
 - [x] Console.log the price when clicked
 - [x] Create order Constructor - use the example from todo
 - [ ] instansiate Order constructor
+- [x] set up class in Parse
+- [x] set 'Results' thaiItems.json
+- [x] add menu items to Parse
+- [x] render menu from Parse
