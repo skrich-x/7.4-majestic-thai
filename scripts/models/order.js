@@ -1,4 +1,4 @@
-import{ItemListCollection} from './itemList';
+import {ItemListCollection} from './itemList';
 
 var Order = Backbone.Model.extend({
   idAttribute: 'objectId',

@@ -1,5 +1,7 @@
 import EachItemView from './itemView';
 
+// import OrderCollection from '../models/order';
+
 export default Backbone.View.extend({
   template: JST.menuItems,
   className: 'menuItems',

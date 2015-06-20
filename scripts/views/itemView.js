@@ -1,3 +1,4 @@
+
 export default Backbone.View.extend({
   template: JST.menuItems,
   className: 'eachItem',
@@ -15,7 +16,7 @@ export default Backbone.View.extend({
   },
 
   addOrderItem: function(){
-    console.log(this.model);
+    console.log(this);
   }
 
 });
