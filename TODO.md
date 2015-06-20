@@ -7,4 +7,5 @@
 - [x] Display items in html
 - [ ] Correct Naming between files to correct         styling
 - [ ] ( address menuItems class in scss)
-- [ ] 
+- [x] Render child view - will have to restructure views
+- [ ] Correct Styling issues to keep styling

@@ -3,7 +3,6 @@ import EachItemView from './itemView';
 export default Backbone.View.extend({
   template: JST.menuItems,
   className: 'menuItems',
-  tagName: 'ul',
 
 
   initialize: function(){
@@ -12,6 +11,7 @@ export default Backbone.View.extend({
 
   render: function(){
     this.renderChildren();
+    // console.log(this.children);
   },
 
   //creates children views

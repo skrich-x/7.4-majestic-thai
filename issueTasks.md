@@ -11,7 +11,7 @@
 - [x] Define a FoodListView constructor
 - [x] Make a view instance responsible instead of just a template for the collection.
 - [x] Define a FoodItemView constructor
-- [ ] Use the `renderChildren` method to render a child view for each food item
+- [x] Use the `renderChildren` method to render a child view for each food item
 - [ ] `console.log` the food model when I click on its price button
 - [ ] Define a Order constructor
 - [ ] Create an instance of Order
