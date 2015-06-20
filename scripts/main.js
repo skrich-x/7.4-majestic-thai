@@ -6,6 +6,7 @@ import {Item, ItemListCollection} from './models/itemList';
 import {Order, OrderCollection} from './models/order';
 // import OrderView from './views/orderView';
 
+import {Categories} from './views/foodCategoryView';
 
 (function(){
   'use strict';
@@ -13,6 +14,9 @@ import {Order, OrderCollection} from './models/order';
   $(document).ready(function(){
     Backbone.history.start();
     $('#orderTemplate').html(JST.order());
+
+    // var category = new Categories();
+    // console.log('category', category);
 
     var itemList = new ItemListCollection();
     console.log('itemList', itemList);

@@ -4,9 +4,13 @@ import {ItemListCollection} from '../models/itemList';
 
 export default Backbone.View.extend({
   template: JST.foodCategory,
-  tagName: 'ul',
+  tagName: 'div',
   className: 'foodCategory',
+  hidden: true,
 
+  events: {
+
+  },
 
   initialize: function(){
     this.render();
@@ -16,12 +20,13 @@ export default Backbone.View.extend({
     this.renderChildren();
   },
 
+
   //creates children views
   renderChildren: function(){
     _.invoke(this.children || [], 'remove');
 
     this.children = this.collection.map((child) => {
-      var view = new EachItemView({
+      var view = new ItemView({
         model: child,
         collection: this.collection
       });
@@ -40,4 +45,5 @@ export default Backbone.View.extend({
 
     }
 
-});
+
+  });
