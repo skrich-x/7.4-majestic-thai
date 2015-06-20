@@ -5,7 +5,7 @@ import {Item, ItemListCollection} from './models/itemList';
   'use strict';
 
   $(document).ready(function(){
-    // Backbone.history.start();
+    Backbone.history.start();
     $('#orderTemplate').html(JST.order());
     console.log("inDocReady");
 
@@ -15,5 +15,7 @@ import {Item, ItemListCollection} from './models/itemList';
       var menuItem = new MenuItem({collection: itemList});
       $('#menuItemTemplate').html(menuItem.el);
       }, console.error.bind(console));
+      console.log('afterFetch');
+
     });
   })();

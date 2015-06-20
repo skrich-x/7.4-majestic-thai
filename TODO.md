@@ -5,6 +5,6 @@
 - [x] Create view for menu Items.
 - [x] Create model and collection for menu Items
 - [x] Display items in html
-- [ ]
-- [ ]
-- [ ]
+- [ ] Correct Naming between files to correct         styling
+- [ ] ( address menuItems class in scss)
+- [ ] 

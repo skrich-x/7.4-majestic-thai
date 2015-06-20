@@ -70,10 +70,6 @@ ul{
 @include span-columns (7);
 }
 
-.orders{
-@include span-columns (4 of 12);
-@include omega();
-}
 
 .itemList{
   border: 1px solid gray;
@@ -99,6 +95,11 @@ ul{
 }
 
 //////ORDERS STYLING/////////
+.orders{
+@include span-columns (4 of 12);
+@include omega();
+}
+
 .orders{
   border: 1px solid gray;
   margin-top: 15px;
