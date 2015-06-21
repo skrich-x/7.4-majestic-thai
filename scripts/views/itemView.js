@@ -26,8 +26,6 @@ export default Backbone.View.extend({
     var itemToAdd = new Order();
     itemToAdd.set({
       'item': clickedItem.item,
-      'description':clickedItem.description,
-      'category': clickedItem.category,
       'price': clickedItem.price,
       'id': clickedItem.objectId
     });
