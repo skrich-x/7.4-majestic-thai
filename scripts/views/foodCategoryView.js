@@ -9,7 +9,6 @@ export default Backbone.View.extend({
 
   events: {
     'click .showCategoryDetail': 'toggleCategory'
-
   },
 
 
@@ -21,10 +20,11 @@ export default Backbone.View.extend({
     this.$el.html(this.template({category: this.category}));
     this.renderChildren();
   },
-toggleCategory: function(e) {
-  $('.itemList').slideToggle(450, function() {});
 
-},
+  toggleCategory: function(e) {
+  $(this.el).closest('.foodCategory').find('.itemList').slideToggle(375, function(){});
+  },
+
 
   //creates children views
   renderChildren: function(){
