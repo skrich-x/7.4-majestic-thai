@@ -1,12 +1,11 @@
 import ItemView from './itemView';
 
-import {ItemListCollection} from '../models/itemList';
-
 export default Backbone.View.extend({
   template: JST.foodCategory,
+
   tagName: 'div',
   className: 'foodCategory',
-  hidden: true,
+  // hidden: true,
 
   events: {
 

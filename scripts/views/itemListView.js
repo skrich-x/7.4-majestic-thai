@@ -1,4 +1,3 @@
-import EachItemView from './itemView';
 
 import FoodCategoryView from './foodCategoryView';
 
@@ -18,24 +17,33 @@ export default Backbone.View.extend({
   //creates children views
   renderChildren: function(){
     _.invoke(this.children || [], 'remove');
-
-    this.children = this.collection.map((child) => {
-      var view = new FoodCategoryView({
-        model: child,
-        collection: this.collection
-      });
+   //
+  //   this.children = this.collection.map((child) => {
+  //     var view = new FoodCategoryView({
+  //       model: child,
+  //       collection: this.collection
+  //     });
+   //
+  //     this.$el.append(view.el);
+  //     return view;
+  //   }.bind(this));
+   //
+  //   _.each(this.collection.groupBy('category'),    function(item, category) {
+  //    console.log(item,category);
+  //  });
+  var groupedCategories =
+   _.each(this.collection.groupBy('category'), function(items, category){
+     var foodCollection = new Backbone.Collection (items);
+     var view = new FoodCategoryView({
+       category: category,
+       collection: foodCollection,
+     });
 
       this.$el.append(view.el);
       return view;
-    }.bind(this));
+      }.bind(this));
 
-    _.each(this.collection.groupBy('category'), function(item, category) {
-           console.log(item,category);
-           })
-
-
-
-    return this;
+      return this;
 
   },
 
