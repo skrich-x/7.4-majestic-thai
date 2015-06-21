@@ -2,9 +2,8 @@
 import FoodCategoryView from './foodCategoryView';
 
 export default Backbone.View.extend({
-  template: JST.menuItems,
+  // template: JST.menuItems,
   className: 'menuItems',
-  tagName: 'li',
 
 
 
@@ -31,7 +30,6 @@ export default Backbone.View.extend({
       this.$el.append(view.el);
       return view;
       }.bind(this));
-
       return this;
 
   },

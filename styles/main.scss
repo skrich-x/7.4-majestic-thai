@@ -69,8 +69,16 @@ body {
 ///Category Styling///
 
 .foodCategory{
-  border: 1px solid red;
+  border: 2px double RGBA(52, 152, 219, .5);
+  background-color:RGBA(192, 225, 229, .25);
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
+
+.itemList{
+  display: none;
+   }
+
 ///////Menu Items Styling///////
 .menuItems{
 @include span-columns (7);
@@ -83,14 +91,14 @@ body {
 }
 
 .itemList :hover{
-  background-color: RGBA(232, 232, 232, 1);
+  background-color: RGBA(192, 225, 229, 1);
 }
 
-.item{
+.itemList{
   padding: 24px;
 }
 
-.item button{
+.itemList button{
   border: 1px solid gray;
   color: RGBA(52, 152, 219, 1);
 

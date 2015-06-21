@@ -13,7 +13,6 @@ export default Backbone.View.extend({
   },
 
 
-
   initialize: function(){
     this.render();
   },
@@ -22,12 +21,10 @@ export default Backbone.View.extend({
     this.$el.html(this.template({category: this.category}));
     this.renderChildren();
   },
+toggleCategory: function(e) {
+  $('.itemList').slideToggle(450, function() {});
 
-  toggleCategory: function(e){
-    e.preventDefault(e.target);
-    $('.itemList').slideToggle(350, function(){});
-
-  },
+},
 
   //creates children views
   renderChildren: function(){
@@ -36,10 +33,10 @@ export default Backbone.View.extend({
     this.children = this.collection.map((child) => {
       var view = new ItemView({
         model: child,
-        collection: this.collection
+        category: this.category
       });
 
-      // this.$el.append(view.el);
+
       this.$('.itemList').append(view.el);
       return view;
     }.bind(this));
