@@ -7,16 +7,12 @@ export default Backbone.View.extend({
   className: 'foodCategory',
   // hidden: true,
 
-  // events: {
-  //   'click .showCategoryDetail': 'toggleCategory'
-  //
-  // },
-  //
-  // toggleCategory: function(e){
-  //   e.preventDefault();
-  //   console.log('showCategory clicked');
-  //
-  // },
+  events: {
+    'click .showCategoryDetail': 'toggleCategory'
+
+  },
+
+
 
   initialize: function(){
     this.render();
@@ -25,6 +21,12 @@ export default Backbone.View.extend({
   render: function(){
     this.$el.html(this.template({category: this.category}));
     this.renderChildren();
+  },
+
+  toggleCategory: function(e){
+    e.preventDefault(e.target);
+    $('.itemList').slideToggle(350, function(){});
+
   },
 
   //creates children views
@@ -38,7 +40,7 @@ export default Backbone.View.extend({
       });
 
       // this.$el.append(view.el);
-      this.$('.foodCategory').append(view.el);
+      this.$('.itemList').append(view.el);
       return view;
     }.bind(this));
 

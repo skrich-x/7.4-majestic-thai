@@ -4,7 +4,7 @@ import FoodCategoryView from './foodCategoryView';
 export default Backbone.View.extend({
   template: JST.menuItems,
   className: 'menuItems',
-
+  tagName: 'li',
 
 
 

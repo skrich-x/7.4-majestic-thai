@@ -15,12 +15,12 @@ import {Categories} from './views/foodCategoryView';
     Backbone.history.start();
     $('#orderTemplate').html(JST.order());
 
-      $(document).on('click', '.foodCategory',
-      function() {
-      $(this).siblings('.itemList').slideToggle();
-      $(this).children('.itemList').slideToggle();
-    });
-
+    //   $(document).on('click', '.foodCategory',
+    //   function() {
+    //   $(this).siblings('.itemList').slideToggle();
+    //   $(this).children('.itemList').slideToggle();
+    // });
+    //
 
 
     // var category = new Categories();
