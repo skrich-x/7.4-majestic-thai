@@ -24,6 +24,7 @@ body {
   background-color: RGBA(198, 227, 205, 1);
 } */
 
+
 .centeredContainer{
   @include outer-container(1050px);
   margin-left: 0;
@@ -65,19 +66,21 @@ ul{
   border-left: none;
   border-right: none;
 }
+
+///Category Styling///
+
+.foodCategory{
+  border: 1px solid red;
+}
 ///////Menu Items Styling///////
 .menuItems{
 @include span-columns (7);
 }
 
 
-.itemList{
+.item{
   border: 1px solid gray;
   color:RGBA(144, 152, 153, 1);
-}
-
-.itemList li{
-  border-bottom: 1px solid gray;
 }
 
 .itemList :hover{

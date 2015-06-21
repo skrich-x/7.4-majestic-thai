@@ -3,6 +3,7 @@ import {OrderCollection} from '../models/order';
 export default Backbone.View.extend({
   template: JST.menuItems,
   className: 'eachItem',
+  tagName: 'li',
 
   events: {
   'click .order': 'addOrderItem'

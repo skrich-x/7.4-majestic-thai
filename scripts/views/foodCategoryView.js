@@ -5,7 +5,7 @@ export default Backbone.View.extend({
 
   tagName: 'div',
   className: 'foodCategory',
-  // hidden: true,
+  hidden: true,
 
   events: {
 
@@ -16,6 +16,7 @@ export default Backbone.View.extend({
   },
 
   render: function(){
+    this.$el.html(this.template({category: this.category}));
     this.renderChildren();
   },
 
@@ -30,7 +31,8 @@ export default Backbone.View.extend({
         collection: this.collection
       });
 
-      this.$el.append(view.el);
+      // this.$el.append(view.el);
+      this.$('.foodCategory').append(view.el);
       return view;
     }.bind(this));
 

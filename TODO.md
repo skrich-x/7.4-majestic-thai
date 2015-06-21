@@ -17,6 +17,6 @@
 - [x] set 'Results' thaiItems.json
 - [x] add menu items to Parse
 - [x] render menu from Parse
-- [ ] add foodCategory Handlebars
-- [ ] add foodCategory View
-- [ ] console the categories
+- [x] add foodCategory Handlebars
+- [x] add foodCategory View
+- [x] console the categories
