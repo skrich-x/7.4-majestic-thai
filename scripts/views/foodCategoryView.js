@@ -5,11 +5,18 @@ export default Backbone.View.extend({
 
   tagName: 'div',
   className: 'foodCategory',
-  hidden: true,
+  // hidden: true,
 
-  events: {
-
-  },
+  // events: {
+  //   'click .showCategoryDetail': 'toggleCategory'
+  //
+  // },
+  //
+  // toggleCategory: function(e){
+  //   e.preventDefault();
+  //   console.log('showCategory clicked');
+  //
+  // },
 
   initialize: function(){
     this.render();
@@ -19,7 +26,6 @@ export default Backbone.View.extend({
     this.$el.html(this.template({category: this.category}));
     this.renderChildren();
   },
-
 
   //creates children views
   renderChildren: function(){
