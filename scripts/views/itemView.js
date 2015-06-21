@@ -1,4 +1,4 @@
-import {OrderCollection} from '../models/order';
+import {Order, OrderCollection} from '../models/order';
 
 export default Backbone.View.extend({
   template: JST.menuItems,
@@ -20,15 +20,26 @@ export default Backbone.View.extend({
     // console.log('render');
   },
 
-  addOrderItem: function(e){
-    e.preventDefault();
-    console.log(this.model.toJSON().price);
+  addOrderItem: function(event){
+    var clickedItem = this.model.toJSON();
+    console.log(clickedItem);
+    var itemToAdd = new Order();
+    itemToAdd.set({
+      'item': clickedItem.item,
+      'description':clickedItem.description,
+      'category': clickedItem.category,
+      'price': clickedItem.price,
+      'id': clickedItem.objectId
+    });
+    console.log(itemToAdd.toJSON(), 'model added');
+    this.$el.add(itemToAdd);
 
-    // this.order.add(this.model);
-    // console.log('collection',this.order);
 
-    //^^^^creating error referencing "add"
 
   }
 
+});
+
+Handlebars.registerHelper('priceFixed', function(price) {
+  return price.toFixed(2);
 });

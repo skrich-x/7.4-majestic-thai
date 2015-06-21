@@ -3,10 +3,10 @@
 // export default Backbone.View.extend({
 //   template: JST.order,
 //   className: 'order',
-//   //
-//   // events: {
-//   //   'click .order': 'addedItemOrder'
-//   // },
+//
+//   events: {
+//     'click .order': 'addedItemOrder'
+//   },
 //
 //   initialize: function(){
 //     this.render();
@@ -19,6 +19,8 @@
 //   },
 //
 //   addedItemOrder: function(){
+//     this.collection.save();
+//     console.log(addedItemOrder);
 //   }
 //
 // });

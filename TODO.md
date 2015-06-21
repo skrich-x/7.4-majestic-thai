@@ -20,3 +20,6 @@
 - [x] add foodCategory Handlebars
 - [x] add foodCategory View
 - [x] console the categories
+- [x] render items in category drop down
+- [x] toggle categories individually
+- [ ] work on order

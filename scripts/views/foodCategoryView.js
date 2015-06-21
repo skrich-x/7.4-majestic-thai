@@ -13,6 +13,7 @@ export default Backbone.View.extend({
 
 
   initialize: function(){
+
     this.render();
   },
 
@@ -20,6 +21,7 @@ export default Backbone.View.extend({
     this.$el.html(this.template({category: this.category}));
     this.renderChildren();
   },
+
 
   toggleCategory: function(e) {
   $(this.el).closest('.foodCategory').find('.itemList').slideToggle(375, function(){});
@@ -48,7 +50,6 @@ export default Backbone.View.extend({
     remove: function(){
       _.invoke(this.children || [], 'remove');
       Backbone.View.prototype.remove.apply(this.arguments);
-
     }
 
 
