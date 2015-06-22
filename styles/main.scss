@@ -16,45 +16,66 @@ $base-background-color: $very-light-gray;
 
 body {
   font-family: $base-font-family;
-  background-color: RGBA(199, 182, 173, .2);
+  background-color: RGBA(120, 120, 120, 1);
   color: $base-font-color;
 }
 
-/* body{
-  background-color: RGBA(198, 227, 205, 1);
-} */
 
+
+hr {
+    width:95%;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+ul{
+ list-style-type: none;
+ padding: 0;
+}
 
 .centeredContainer{
   @include outer-container(980px);
-  border-bottom: 1px solid RGBA(232, 232, 232, 1);
 }
- ul{
-  list-style-type: none;
-  padding: 0;
-}
+
 
 ////////Header Styling//////////
-.nav{
-  height: 65px;
-}
-
-.nav img{
-  height: 30px;
-  width: 20px;
-}
 
 .headerImage{
-  	background-image: url('/images/majestic3__.png');
+  	background-image: url('/images/majesticThai.png');
   	background-size: cover;
+    background-position: 30% 60%;
   	background-repeat: no-repeat;
-  	box-shadow: 0 5px 5px RGBA(52, 152, 219, .25);
+  	box-shadow: 0 5px 5px RGBA(29, 19, 10, .5);
   	height: 400px;
   	position: relative;
 }
 
+.logo{
+  max-width:100%;
+  height: 200px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 5px 5px RGBA(29, 19, 10, .5)
+}
+
 .searchBar{
+  background-color:RGBA(3, 3, 3, .5);
   height: 65px;
+  margin-bottom: 1em;
 }
 
 .searchBar input{
@@ -72,16 +93,22 @@ body {
 ///Category Styling///
 
 .foodCategory{
-  border: 2px double RGBA(52, 152, 219, .5);
-  background-color:RGBA(192, 225, 229, .25);
-  margin-top:1em;
-  margin-bottom: 1em;
+  border: 1px double RGBA(3, 3, 3, .5);
+  background-color:RGBA(3, 3, 3, .25);
+  color:RGBA(215, 210, 204, 1);
+  box-shadow: 0 5px 5px RGBA(29, 19, 10, .5);
+  margin-top:.5em;
+  margin-bottom: .5em;
   border-radius: 5px;
   width:100%;
-  padding: 1em;
+  padding: .5em;
   transition: all .5s linear;
+  vertical-align: middle;
 }
 
+.foodCategory i{
+  float:right;
+}
 .itemList{
   display: none;
    }
@@ -92,21 +119,34 @@ body {
 }
 
 .itemList{
-  border: 1px solid gray;
-  color:RGBA(144, 152, 153, 1);
+  color:RGBA(93, 68, 56, 1);
+  transition: all .5s linear;
+
 }
 
 .itemList :hover{
-  background-color: RGBA(192, 225, 229, 1);
+  background-color: RGBA(119, 117, 34, .75);
+  color: RGBA(215, 210, 204, 1);
 }
 
-.itemList{
-  padding: 24px;
-}
 
 .itemList button{
-  border: 1px solid gray;
-  color: RGBA(52, 152, 219, 1);
+  background-color:RGBA(215, 210, 204, 1);
+  border: 1px solid RGBA(119, 117, 34, 1);
+  color: RGBA(119, 117, 34, 1);
+}
+
+/* itemList button :hover{
+  background-color:
+} */
+.eachItem{
+  background-color: RGBA(215, 210, 204, 1);
+  border-top: 1px solid RGBA(3, 3, 3, .25);
+  border-bottom: 1px solid RGBA(3, 3, 3, .25);
+  border-radius: 4px;
+  margin-top: .25em;
+  padding-left: 1em;
+  padding-right: 1em;
 
 }
 
@@ -117,37 +157,37 @@ body {
 }
 
 
-.orders{
+.yourOrder{
   border: 1px solid gray;
-  margin-top: 1em;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px RGBA(29, 19, 10, .5);
+  margin-top: .5em;
   margin-left: 1.2em;
   margin-bottom: 1em;
-}
-
-.yourOrder{
-  height: 70px;
   text-align: center;
 }
 
-.groupOrderButton{
-  height: 105px;
-  text-align: center;
+.yourOrder button{
+  width: 80%;
+  margin: .5em;
+  height: 60px;
+  background-color:RGBA(119, 117, 34, .5);
+  border: 5px double RGBA(3, 3, 3, .25);
+  color: RGBA(215, 210, 204, 1);
+  box-shadow: 0 5px 5px RGBA(29, 19, 10, .5)
+}
+.yourOrder i{
+  display: inline;
+  padding-right:.5em;
+  padding-left: .5em;
 }
 
-.itemPrice{
-  height: 100px;
-  text-align: center;
-}
-
-.deliverPickup{
-  height: 110px;
-  text-align: center;
-}
 //////FOOTER STYLING////////
 
 footer{
   height: 130px;
-  background-color:$light-gray;
-  opacity: .75;
+  background-color:RGBA(3, 3, 3, .5);
   color:RGBA(127, 131, 134, 1);
+  text-align: center;
+  padding-top: 2em;
 }
