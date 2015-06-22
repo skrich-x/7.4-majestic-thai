@@ -13,9 +13,7 @@ import {Categories} from './views/foodCategoryView';
 
   $(document).ready(function(){
     // Backbone.history.start();
-    $('#orderTemplate').html(JST.order());
-
-    // var category = new Categories();
+        // var category = new Categories();
     // console.log('category', category);
 
     var itemList = new ItemListCollection();
@@ -23,6 +21,10 @@ import {Categories} from './views/foodCategoryView';
 
     var order = new Order();
     console.log('order',order);
+
+    $('#orderTemplate').html(new OrderView({
+      collection: order
+    }).el);
 
     itemList.fetch().then(function(){
       // var menuItem = new MenuItem({collection: itemList});

@@ -106,6 +106,10 @@ ul{
   vertical-align: middle;
 }
 
+.foodCategory :hover{
+  color: RGBA(119, 117, 34, 1);
+}
+
 .foodCategory i{
   float:right;
 }
@@ -178,10 +182,15 @@ ul{
   color: RGBA(215, 210, 204, 1);
   box-shadow: 0 5px 5px RGBA(29, 19, 10, .5)
 }
+
 .yourOrder i{
   display: inline;
   padding-right:.5em;
   padding-left: .5em;
+}
+
+.yourOrder button:hover{
+  background-color: RGBA(119, 117, 34, 1);
 }
 
 //////FOOTER STYLING////////

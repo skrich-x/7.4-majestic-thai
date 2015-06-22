@@ -11,13 +11,11 @@ export default Backbone.View.extend({
 
   initialize: function(options){
     this.render();
-    // console.log('initialize');
     this.order = options.order;
   },
 
   render: function (){
     this.$el.html(this.template(this.model.toJSON()));
-    // console.log('render');
   },
 
   addOrderItem: function(event){

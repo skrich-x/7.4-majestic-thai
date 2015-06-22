@@ -3,14 +3,14 @@ import {ItemListCollection} from './itemList';
 var Order = Backbone.Model.extend({
   idAttribute: 'objectId',
 
-  defaults: function() {
-    return {
-      item: '',
-      price: 0,
-      category:'',
-      model: '',
-    };
-  },
+  // defaults: function() {
+  //   return {
+  //     item: '',
+  //     price: 0,
+  //     category:'',
+  //     model: '',
+  //   };
+  // },
 
   initialize: function(){
     //create item collection to track items for order
@@ -43,6 +43,10 @@ var Order = Backbone.Model.extend({
   //       })
   //     });
   //   }
+
+    serialize: function(){
+      return this.order.toJSON();
+    }
   });
   console.log(Order);
 

@@ -3,12 +3,16 @@
     <h2>Ta Krai</h2>
     <span>Order</span>
     <hr>
-      <h5><strong>Item<strong></h5>
-      <h5>Price</h5>
+    {{log this}}
+
+    {{#each this}}
+      <h5><strong>{{item}}<strong></h5>
+      <h5>{{price}}</h5>
+    {{/each}}
       <h5>subtotal</h5>
       <h5><strong>Total<strong></h5>
       <hr>
-      <h3>Place Order</h3>
-      <button type="submit" name="checkout" value=""><i class="fa fa-money fa-3x"></i><i class="fa fa-credit-card fa-3x"></i></button>
+      <h3>Place Order</h2>
+      <button class="submitOrder" type="submit" value=""><i class="fa fa-money fa-3x"></i><i class="fa fa-credit-card fa-3x"></i></button>
   </div>
 </div>
