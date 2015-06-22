@@ -12,9 +12,6 @@ import {Categories} from './views/foodCategoryView';
   'use strict';
 
   $(document).ready(function(){
-    // Backbone.history.start();
-        // var category = new Categories();
-    // console.log('category', category);
 
     var itemList = new ItemListCollection();
     console.log('itemList', itemList);
@@ -27,7 +24,6 @@ import {Categories} from './views/foodCategoryView';
     }).el);
 
     itemList.fetch().then(function(){
-      // var menuItem = new MenuItem({collection: itemList});
       var menuItem = new MenuItem({
         order: order,
         collection:itemList
@@ -38,15 +34,3 @@ import {Categories} from './views/foodCategoryView';
 
   });
   })();
-
-//     Handlebars.registerHelper("debug", function(optionalValue) {
-//   console.log("Current Context");
-//   console.log("====================");
-//   console.log(this);
-//
-//   if (optionalValue) {
-//     console.log("Value");
-//     console.log("====================");
-//     console.log(optionalValue);
-//   }
-// });

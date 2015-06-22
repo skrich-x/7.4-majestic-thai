@@ -19,9 +19,6 @@ export default Backbone.View.extend({
   },
 
   addOrderItem: function(event){
-    var clickedItem = this.model.toJSON();
-    console.log(clickedItem);
-
     this.order.add(this.model);
     console.log(this.order);
     // var itemToAdd = new Order();

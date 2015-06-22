@@ -5,7 +5,6 @@ export default Backbone.View.extend({
 
   tagName: 'div',
   className: 'foodCategory',
-  // hidden: true,
 
   events: {
     'click .showCategoryDetail': 'toggleCategory'
@@ -38,7 +37,6 @@ export default Backbone.View.extend({
     this.children = this.collection.map((child) => {
       var view = new ItemView({
         model: child,
-        // category: this.category
         collection: this.collection,
         order:this.order
       });
