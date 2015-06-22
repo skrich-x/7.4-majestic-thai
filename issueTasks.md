@@ -15,9 +15,9 @@
 - [x] `console.log` the food model when I click on its price button
 - [x] Define a Order constructor
 - [x] Create an instance of Order
-- [ ] Pass the order to the child views
-- [ ] `console.log` the order when I click on the foods price
-- [ ] Add the food model to the order
+- [x] Pass the order to the child views
+- [x] `console.log` the order when I click on the foods price
+- [x] Add the food model to the order
 - [x] Define a FoodCategoryView constructor
 - [x] Make instances of FoodCategoryView for each category, moving the 'renderChildren' method down a level.
 - [ ] Make a instance of FoodCategoryView for popularity

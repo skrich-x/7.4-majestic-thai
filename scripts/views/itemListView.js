@@ -7,24 +7,29 @@ export default Backbone.View.extend({
 
 
 
-  initialize: function(){
-    this.render();
+  initialize: function(options){
+    this.render(options);
   },
 
-  render: function(){
-    this.renderChildren();
+  render: function(options){
+    this.renderChildren(options);
   },
 
   //creates children views
-  renderChildren: function(){
+  renderChildren: function(options){
     _.invoke(this.children || [], 'remove');
+
+    this.order = options.order;
 
   var groupedCategories =
    _.each(this.collection.groupBy('category'), function(items, category){
      var foodCollection = new Backbone.Collection (items);
      var view = new FoodCategoryView({
-       category: category,
-       collection: foodCollection,
+      //  category: category,
+      //  collection: foodCollection,
+      category: this.category,
+      collection: foodCollection,
+      order:this.order
      });
 
       this.$el.append(view.el);

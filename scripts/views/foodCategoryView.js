@@ -12,14 +12,15 @@ export default Backbone.View.extend({
   },
 
 
-  initialize: function(){
-
-    this.render();
+  initialize: function(options){
+    this.category = options.category;
+    this.order = options.order;
+    this.render(options);
   },
 
-  render: function(){
+  render: function(options){
     this.$el.html(this.template({category: this.category}));
-    this.renderChildren();
+    this.renderChildren(options);
   },
 
 
@@ -29,13 +30,17 @@ export default Backbone.View.extend({
 
 
   //creates children views
-  renderChildren: function(){
+  renderChildren: function(options){
     _.invoke(this.children || [], 'remove');
+
+    this.order = options.order;
 
     this.children = this.collection.map((child) => {
       var view = new ItemView({
         model: child,
-        category: this.category
+        // category: this.category
+        collection: this.collection,
+        order:this.order
       });
 
 

@@ -16,7 +16,7 @@ $base-background-color: $very-light-gray;
 
 body {
   font-family: $base-font-family;
-  background-color: $base-background-color;
+  background-color: RGBA(199, 182, 173, .2);
   color: $base-font-color;
 }
 
@@ -26,9 +26,7 @@ body {
 
 
 .centeredContainer{
-  @include outer-container(1050px);
-  margin-left: 0;
-  margin-right: 0;
+  @include outer-container(980px);
   border-bottom: 1px solid RGBA(232, 232, 232, 1);
 }
  ul{
@@ -47,10 +45,12 @@ body {
 }
 
 .headerImage{
-  height: 250px;
-  width: 100%;
-  background-color: RGBA(198, 227, 205, 1);
-/*   background-image: url('images/headerBackground.jpg'); */
+  	background-image: url('/images/majestic3__.png');
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	box-shadow: 0 5px 5px RGBA(52, 152, 219, .25);
+  	height: 400px;
+  	position: relative;
 }
 
 .searchBar{
@@ -58,9 +58,12 @@ body {
 }
 
 .searchBar input{
+  margin: 1em;
+  background-color: RGBA(52, 152, 219, .1);
   width: 335px;
   height:50px;
-  border-bottom: 2px solid RGBA(107, 173, 66, 1);
+  border-radius:5px;
+  border-bottom: 2px solid RGBA(0, 152, 44, 1);
   border-top: none;
   border-left: none;
   border-right: none;
@@ -71,8 +74,12 @@ body {
 .foodCategory{
   border: 2px double RGBA(52, 152, 219, .5);
   background-color:RGBA(192, 225, 229, .25);
-  margin-bottom: 10px;
+  margin-top:1em;
+  margin-bottom: 1em;
   border-radius: 5px;
+  width:100%;
+  padding: 1em;
+  transition: all .5s linear;
 }
 
 .itemList{
@@ -81,11 +88,10 @@ body {
 
 ///////Menu Items Styling///////
 .menuItems{
-@include span-columns (7);
+@include span-columns (7.5);
 }
 
-
-.item{
+.itemList{
   border: 1px solid gray;
   color:RGBA(144, 152, 153, 1);
 }
@@ -106,13 +112,16 @@ body {
 
 //////ORDERS STYLING/////////
 .orders{
-@include span-columns (4 of 12);
+@include span-columns (4.5);
 @include omega();
 }
 
+
 .orders{
   border: 1px solid gray;
-  margin-top: 15px;
+  margin-top: 1em;
+  margin-left: 1.2em;
+  margin-bottom: 1em;
 }
 
 .yourOrder{
@@ -138,5 +147,7 @@ body {
 
 footer{
   height: 130px;
+  background-color:$light-gray;
+  opacity: .75;
   color:RGBA(127, 131, 134, 1);
 }

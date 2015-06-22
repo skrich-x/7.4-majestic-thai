@@ -22,4 +22,5 @@
 - [x] console the categories
 - [x] render items in category drop down
 - [x] toggle categories individually
-- [ ] work on order
+- [x] work on order
+- [x] connect the order to click event.
