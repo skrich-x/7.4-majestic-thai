@@ -120,7 +120,7 @@ ul{
 
 .itemList{
   color:RGBA(93, 68, 56, 1);
-  transition: all .5s linear;
+  transition: all 4s linear;
 
 }
 
@@ -136,9 +136,11 @@ ul{
   color: RGBA(119, 117, 34, 1);
 }
 
-/* itemList button :hover{
-  background-color:
-} */
+.itemList button:hover{
+  color: RGBA(215, 210, 204, 1);
+  background-color: RGBA(148, 0, 14, .75);
+
+}
 .eachItem{
   background-color: RGBA(215, 210, 204, 1);
   border-top: 1px solid RGBA(3, 3, 3, .25);
@@ -158,7 +160,7 @@ ul{
 
 
 .yourOrder{
-  border: 1px solid gray;
+  border: 4px double RGBA(3, 3, 3, .25);
   border-radius: 5px;
   box-shadow: 0 5px 5px RGBA(29, 19, 10, .5);
   margin-top: .5em;

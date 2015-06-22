@@ -27,7 +27,7 @@ export default Backbone.View.extend({
      var view = new FoodCategoryView({
       //  category: category,
       //  collection: foodCollection,
-      category: this.category,
+      category: category,
       collection: foodCollection,
       order:this.order
      });
