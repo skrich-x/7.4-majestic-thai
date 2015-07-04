@@ -38,9 +38,15 @@ var Order = Backbone.Model.extend({
 
     serialize: function(){
       return this.order.toJSON();
-    }
+
+    },
+
+    subtotal: function(){
+      return this.food.reduce(function(a,b){
+        return a + b.get('price');
+      }, 0);
+      }
   });
-  console.log(Order);
 
   var OrderCollection = Backbone.Collection.extend({
     model: Order,
