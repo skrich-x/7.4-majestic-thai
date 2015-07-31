@@ -21,14 +21,14 @@ export default Backbone.View.extend({
   addOrderItem: function(event){
     this.order.add(this.model);
     console.log(this.order);
-    // var itemToAdd = new Order();
-    // itemToAdd.set({
-    //   'item': clickedItem.item,
-    //   'price': clickedItem.price,
-    //   'id': clickedItem.objectId
-    // });
-    // console.log(itemToAdd.toJSON(), 'model added');
-    // this.$el.add(itemToAdd);
+    var itemToAdd = new Order();
+    itemToAdd.set({
+      'item': clickedItem.item,
+      'price': clickedItem.price,
+      'id': clickedItem.objectId
+    });
+    console.log(itemToAdd.toJSON(), 'model added');
+    this.$el.add(itemToAdd);
 
 
 

@@ -23,14 +23,14 @@ var Router = Backbone.Router.extend({
       this.itemList = new ItemListCollection();
       console.log('itemList');
 
-      //
-      // var order = new Order();
-      // console.log('order',order);
-      //
-      // $('#orderTemplate').html(new OrderView({
-      //   collection: order
-      // }).el);
-      //
+
+      var order = new Order();
+      console.log('order',order);
+
+      $('#orderTemplate').html(new OrderView({
+        collection: order
+      }).el);
+
       this.itemList.fetch().then(function(){
         var menuItem = new MenuItem({collection: this.itemList});
           // order: order,
