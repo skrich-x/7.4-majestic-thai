@@ -1,0 +1,26 @@
+- [x] Test Connection of static files
+- [x] Create static mockup
+- [x] Determine templates needed
+- [x] Re-render templates on page - erase application.hbs
+- [x] Create view for menu Items.
+- [x] Create model and collection for menu Items
+- [x] Display items in html
+- [ ] Correct Naming between files to correct         styling
+- [ ] ( address menuItems class in scss)
+- [x] Render child view - will have to restructure views
+- [x] Correct Styling issues to keep styling
+- [x] Add events for Clicking on price.
+- [x] Console.log the price when clicked
+- [x] Create order Constructor - use the example from todo
+- [ ] instansiate Order constructor
+- [x] set up class in Parse
+- [x] set 'Results' thaiItems.json
+- [x] add menu items to Parse
+- [x] render menu from Parse
+- [x] add foodCategory Handlebars
+- [x] add foodCategory View
+- [x] console the categories
+- [x] render items in category drop down
+- [x] toggle categories individually
+- [x] work on order
+- [x] connect the order to click event.

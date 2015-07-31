@@ -16,6 +16,195 @@ $base-background-color: $very-light-gray;
 
 body {
   font-family: $base-font-family;
-  background-color: $base-background-color;
+  background-color: RGBA(120, 120, 120, 1);
   color: $base-font-color;
+}
+
+
+
+hr {
+    width:95%;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+ul{
+ list-style-type: none;
+ padding: 0;
+}
+
+.centeredContainer{
+  @include outer-container(980px);
+}
+
+
+////////Header Styling//////////
+
+.headerImage{
+  	background-image: url('/images/majesticThai.png');
+  	background-size: cover;
+    background-position: 30% 60%;
+  	background-repeat: no-repeat;
+  	box-shadow: 0 5px 5px RGBA(29, 19, 10, .5);
+  	height: 400px;
+  	position: relative;
+}
+
+.logo{
+  max-width:100%;
+  height: 200px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 5px 5px RGBA(29, 19, 10, .5)
+}
+
+.searchBar{
+  background-color:RGBA(3, 3, 3, .5);
+  height: 65px;
+  margin-bottom: 1em;
+}
+
+.searchBar input{
+  margin: 1em;
+  background-color: RGBA(52, 152, 219, .1);
+  width: 335px;
+  height:50px;
+  border-radius:5px;
+  border-bottom: 2px solid RGBA(0, 152, 44, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+///Category Styling///
+
+.foodCategory{
+  border: 1px double RGBA(3, 3, 3, .5);
+  background-color:RGBA(3, 3, 3, .25);
+  color:RGBA(215, 210, 204, 1);
+  box-shadow: 0 5px 5px RGBA(29, 19, 10, .5);
+  margin-top:.5em;
+  margin-bottom: .5em;
+  border-radius: 5px;
+  width:100%;
+  padding: .5em;
+  transition: all .5s linear;
+  vertical-align: middle;
+}
+
+.foodCategory :hover{
+  color: RGBA(119, 117, 34, 1);
+}
+
+.foodCategory i{
+  float:right;
+}
+.itemList{
+  display: none;
+   }
+
+///////Menu Items Styling///////
+.menuItems{
+@include span-columns (7.5);
+}
+
+.itemList{
+  color:RGBA(93, 68, 56, 1);
+  transition: all 4s linear;
+
+}
+
+.itemList :hover{
+  background-color: RGBA(119, 117, 34, .75);
+  color: RGBA(215, 210, 204, 1);
+}
+
+
+.itemList button{
+  background-color:RGBA(215, 210, 204, 1);
+  border: 1px solid RGBA(119, 117, 34, 1);
+  color: RGBA(119, 117, 34, 1);
+}
+
+.itemList button:hover{
+  color: RGBA(215, 210, 204, 1);
+  background-color: RGBA(148, 0, 14, .75);
+
+}
+.eachItem{
+  background-color: RGBA(215, 210, 204, 1);
+  border-top: 1px solid RGBA(3, 3, 3, .25);
+  border-bottom: 1px solid RGBA(3, 3, 3, .25);
+  border-radius: 4px;
+  margin-top: .25em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+}
+
+//////ORDERS STYLING/////////
+.orders{
+@include span-columns (4.5);
+@include omega();
+}
+
+
+.yourOrder{
+  border: 4px double RGBA(3, 3, 3, .25);
+  border-radius: 5px;
+  box-shadow: 0 5px 5px RGBA(29, 19, 10, .5);
+  margin-top: .5em;
+  margin-left: 1.2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.yourOrder h4{
+  color: RGBA(215, 210, 204, 1);
+  text-decoration: underline;
+
+}
+
+.yourOrder button{
+  width: 80%;
+  margin: .5em;
+  height: 60px;
+  background-color:RGBA(119, 117, 34, .5);
+  border: 5px double RGBA(3, 3, 3, .25);
+  color: RGBA(215, 210, 204, 1);
+  box-shadow: 0 5px 5px RGBA(29, 19, 10, .5)
+}
+
+.yourOrder i{
+  display: inline;
+  padding-right:.5em;
+  padding-left: .5em;
+}
+
+.yourOrder button:hover{
+  background-color: RGBA(119, 117, 34, 1);
+}
+
+//////FOOTER STYLING////////
+
+footer{
+  height: 130px;
+  background-color:RGBA(3, 3, 3, .5);
+  color:RGBA(127, 131, 134, 1);
+  text-align: center;
+  padding-top: 2em;
 }
