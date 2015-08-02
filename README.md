@@ -2,7 +2,7 @@
 
 ## Project Description
 
-### ta-Krai Moder Thai Cuisine
+### ta-Krai Modern Thai Cuisine
 This application implements the Backbone.js framework to create an interactive menu and shopping cart. Parse Core is used as its backend service.
 
 ## Technologies and Tools Implemented
